@@ -1,0 +1,24 @@
+.container {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.link:hover {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+}

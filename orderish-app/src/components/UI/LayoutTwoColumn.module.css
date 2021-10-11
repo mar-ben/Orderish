@@ -1,0 +1,11 @@
+.flexcontainer {
+  display: flex;
+}
+.maincontent {
+  flex: 1;
+  padding: 10px 10px 10px 10px;
+}
+.sidebar {
+  flex: 1;
+  background-color: aquamarine;
+}

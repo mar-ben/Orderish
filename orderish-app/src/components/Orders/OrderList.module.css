@@ -1,0 +1,10 @@
+.container {
+  height: 400;
+  width: "100%";
+  padding: 10px 10px 10px 10px;
+}
+.bottomActionContainer {
+  margin-top: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
