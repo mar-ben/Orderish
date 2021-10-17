@@ -1,10 +1,9 @@
 import classes from "./Navigation.module.css";
 
-const onClickNavItemHandler = (item) => {
-  alert(item);
-};
-
 const Navigation = (props) => {
+  const onClickNavItemHandler = (item) => {
+    props.onSelect(item);
+  };
   return (
     <div className={classes.container}>
       <nav>
@@ -40,9 +39,9 @@ const Navigation = (props) => {
             <a
               className={classes.link}
               href="/#"
-              onClick={() => onClickNavItemHandler("Approval")}
+              onClick={() => onClickNavItemHandler("Vendors")}
             >
-              Approval
+              Vendors
             </a>
           </li>
         </ul>

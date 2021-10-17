@@ -1,7 +1,8 @@
 # Orderish
-Order Management Portal
+Cloud based Order Management Portal
 
 ReactJs.
+Webservices.
 
 TODO
 
