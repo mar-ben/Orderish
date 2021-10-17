@@ -89,14 +89,17 @@ const OrderList = (props) => {
 
   return (
     <div className={classes.container}>
-      <DataGrid
-        pagination
-        rowsPerPageOptions={[5]}
-        columns={columns}
-        rows={rows}
-        autoHeight={true}
-        checkboxSelection
-      />
+      <div className={classes.datagridcontainer}>
+        <DataGrid
+          className={classes.datagrid}
+          pagination
+          rowsPerPageOptions={[5]}
+          columns={columns}
+          rows={rows}
+          autoHeight={true}
+          checkboxSelection
+        />
+      </div>
     </div>
   );
 };

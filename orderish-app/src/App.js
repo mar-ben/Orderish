@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 import Header from "./components/Layout/Header";
 import Order from "./components/Orders/Order";
 import ProductList from "./components/Products/ProductList";

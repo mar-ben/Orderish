@@ -1,4 +1,6 @@
 .ListActionBar {
   text-align: right;
   padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

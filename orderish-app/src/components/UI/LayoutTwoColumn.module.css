@@ -1,11 +1,16 @@
 .flexcontainer {
   display: flex;
+  height: 100%;
+  background-color: aqua;
 }
 .maincontent {
-  flex: 1;
+  flex: 5;
   padding: 10px 10px 10px 10px;
+  height: 100%;
+  background-color: #f4f5f7;
 }
 .sidebar {
   flex: 1;
-  background-color: aquamarine;
+  background-color: white;
+  height: 100%;
 }
