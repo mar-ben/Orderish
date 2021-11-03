@@ -1,10 +1,8 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
+import classes from "./Header.module.css";
 import Logo from "../UI/Logo";
 import Navigation from "../UI/Navigation";
+import SearchBox from "../UI/SearchBox";
 
 const Header = (props) => {
   const SelectNavItemHandler = (item) => {
@@ -13,23 +11,28 @@ const Header = (props) => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="small"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <Logo />
-          </IconButton>
+    <div class={classes["header-container"]}>
+      <Logo />
+      <SearchBox />
+      <Navigation onSelect={SelectNavItemHandler}></Navigation>
+    </div>
+    // <Box sx={{ flexGrow: 1 }}>
+    //   <AppBar position="static">
+    //     <Toolbar>
+    //       <IconButton
+    //         size="small"
+    //         edge="start"
+    //         color="inherit"
+    //         aria-label="menu"
+    //         sx={{ mr: 2 }}
+    //       >
+    //         <Logo />
+    //       </IconButton>
 
-          <Navigation onSelect={SelectNavItemHandler}></Navigation>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    //
+    //     </Toolbar>
+    //   </AppBar>
+    // </Box>
   );
 };
 export default Header;
