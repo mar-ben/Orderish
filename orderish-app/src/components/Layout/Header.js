@@ -3,6 +3,7 @@ import classes from "./Header.module.css";
 import Logo from "../UI/Logo";
 import Navigation from "../UI/Navigation";
 import SearchBox from "../UI/SearchBox";
+import HeaderNavigation from "../Navigation/HeaderNavigation";
 
 const Header = (props) => {
   const SelectNavItemHandler = (item) => {
@@ -14,7 +15,7 @@ const Header = (props) => {
     <div class={classes["header-container"]}>
       <Logo />
       <SearchBox />
-      <Navigation onSelect={SelectNavItemHandler}></Navigation>
+      <HeaderNavigation />
     </div>
     // <Box sx={{ flexGrow: 1 }}>
     //   <AppBar position="static">
